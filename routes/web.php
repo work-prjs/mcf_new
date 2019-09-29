@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/migrate', function () {
+    // return view('welcome');
+	Artisan::call('migrate');
+});
 
 Route::get('generator_builder', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@builder');
 Route::get('field_template', '\InfyOm\GeneratorBuilder\Controllers\GeneratorBuilderController@fieldTemplate');
@@ -30,3 +34,42 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 Route::resource('comics', 'ComicsController');
+
+
+//Setup route example
+// Route::get('/key',  function($key = null)
+// {
+//     if($key == "appSetup_key"){
+//     // try {
+//     //   echo '<br>init migrate:install...';
+//     //   Artisan::call('migrate');
+//     //   echo 'done migrate:install';
+      
+//     //   echo '<br>init with Sentry tables migrations...';
+//     //   Artisan::call('migrate', [
+//     //     '--package'=>'cartalyst/sentry'
+//     //     ]);
+//     //   echo 'done with Sentry';
+//     //   echo '<br>init with app tables migrations...';
+//     //   Artisan::call('migrate', [
+//     //     '--path'     => "app/database/migrations"
+//     //     ]);
+//     //   echo '<br>done with app tables migrations';
+//     //   echo '<br>init with Sentry tables seader...';
+//     //   Artisan::call('db:seed');
+//     //   echo '<br>done with Sentry tables seader';
+//     // } catch (Exception $e) {
+//     //   Response::make($e->getMessage(), 500);
+//     // }
+//   }else{
+//     App::abort(404);
+//   }
+// }
+// }));
+
+
+
+
+Route::resource('posts', 'PostController');
+
+Route::resource('cats', 'CatController');

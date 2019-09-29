@@ -40,7 +40,9 @@
             <div class="box box-primary col-lg-12">
                 <div class="box-header" style="margin-top: 10px">
                     <h1 class="box-title" style="font-size: 30px">Generator</h1>
-                    <a href="/">Back</a>
+                    <a href="/" class="btn btn-flat btn-default">Back</a>
+                    <a href="/migrate" class="btn btn-flat btn-default">migrate</a>
+
                 </div>
                 <div class="box-body">
                     <form id="form">

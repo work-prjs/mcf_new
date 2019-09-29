@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-    	содержимое
+    	содержимое home.index
     </div>
 </div>
 @endsection

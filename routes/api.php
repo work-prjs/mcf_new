@@ -19,3 +19,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::resource('comics', 'ComicsAPIController');
+
+
+
+
+
+Route::resource('posts', 'PostAPIController');
+
+Route::resource('cats', 'CatAPIController');
