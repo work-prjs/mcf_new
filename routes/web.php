@@ -33,7 +33,7 @@ Route::get('/home', 'HomeController@index');
 
 Auth::routes();
 
-Route::resource('comics', 'ComicsController');
+
 
 
 //Setup route example
@@ -70,6 +70,5 @@ Route::resource('comics', 'ComicsController');
 
 
 
-Route::resource('posts', 'PostController');
 
-Route::resource('cats', 'CatController');
+
