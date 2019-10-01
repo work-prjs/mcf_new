@@ -34,11 +34,9 @@ php artisan backpack:add-sidebar-content "<li class='nav-item'><a class='nav-lin
 
 
 
-https://github.com/svenluijten/artisan-view
-
-
 Доставить настроить
 https://github.com/Laravel-Backpack/PermissionManager
+https://github.com/svenluijten/artisan-view
 
 
 МЕНЮ сайта верхнее

@@ -14,6 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/migrate', function () {
     // return view('welcome');
 	Artisan::call('migrate');
@@ -34,6 +35,9 @@ Route::get('/home', 'HomeController@index');
 Auth::routes();
 
 
+Route::get('/demo3', function () {
+    return view('demo3');
+});
 
 
 //Setup route example

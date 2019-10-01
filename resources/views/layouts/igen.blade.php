@@ -31,7 +31,6 @@
 </head>
 
 <body class="skin-blue sidebar-mini">
-@if (Auth::guard('backpack')->user())
 
     <div class="wrapper">
         <!-- Main Header -->
@@ -79,11 +78,11 @@
                                         <a href="#" class="btn btn-default btn-flat">Профиль</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="{!! url('/admin/logout') !!}" class="btn btn-default btn-flat"
+                                        <a href="{!! url('/logout') !!}" class="btn btn-default btn-flat"
                                             onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                             Выход
                                         </a>
-                                        <form id="logout-form" action="{{ url('/admin/logout') }}" method="POST" style="display: none;">
+                                        <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                             {{ csrf_field() }}
                                         </form>
                                     </div>
@@ -108,48 +107,6 @@
         </footer>
 
     </div>
-@else
-
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
-            <div class="navbar-header">
-
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#app-navbar-collapse">
-                    <span class="sr-only">Навигация</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="{!! url('/') !!}">
-                    Админ генератор
-                </a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="app-navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="{!! url('/home') !!}">Домашняя</a></li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="{!! url('admin/login') !!}">Вход</a></li>
-                    <li><a href="{!! url('admin/register') !!}">Регистрация</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <div id="page-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    @yield('content')
-                </div>
-            </div>
-        </div>
-    </div>
-    @endif
 
     <!-- jQuery 3.1.1 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
