@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('map');
 });
 
 Route::get('/migrate', function () {
@@ -76,3 +76,8 @@ Route::get('/demo3', function () {
 
 
 
+
+
+Route::resource('projects', 'projectController');
+
+Route::resource('tasks', 'taskController');

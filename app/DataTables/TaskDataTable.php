@@ -2,11 +2,11 @@
 
 namespace App\DataTables;
 
-use App\Models\Task;
+use App\Models\task;
 use Yajra\DataTables\Services\DataTable;
 use Yajra\DataTables\EloquentDataTable;
 
-class TaskDataTable extends DataTable
+class taskDataTable extends DataTable
 {
     /**
      * Build DataTable class.
@@ -24,10 +24,10 @@ class TaskDataTable extends DataTable
     /**
      * Get query source of dataTable.
      *
-     * @param \App\Models\Task $model
+     * @param \App\Models\task $model
      * @return \Illuminate\Database\Eloquent\Builder
      */
-    public function query(Task $model)
+    public function query(task $model)
     {
         return $model->newQuery();
     }
@@ -65,7 +65,10 @@ class TaskDataTable extends DataTable
     protected function getColumns()
     {
         return [
-            'title'
+            'name',
+            'desc',
+            'parent_id',
+            'user_id'
         ];
     }
 
