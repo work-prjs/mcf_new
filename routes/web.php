@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('map');
+    return view('map2');
 });
 
 Route::get('/migrate', function () {
@@ -37,6 +37,13 @@ Auth::routes();
 
 Route::get('/demo3', function () {
     return view('demo3');
+});
+
+Route::get('/mapjs', function () {
+    return view('mapjs');
+});
+Route::get('/map2', function () {
+    return view('map2');
 });
 
 

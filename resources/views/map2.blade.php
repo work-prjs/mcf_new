@@ -25,9 +25,10 @@
 
 
         <div class="col-md-12 connectedSortable">
-          <div class="box collapsed-box box-solid">
+          <div class="box box-solid">
             <div class="box-header with-border">
               <h3 class="box-title">Карта задач</h3>
+              <span>Скачать -> <a target="_blank" href="/map.html_files/map.mm">map.mm</a></span>
 
               <div class="box-tools pull-right">
                 <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
@@ -49,56 +50,16 @@
             <!-- /.box-header -->
             <div class="box-body">
               <div class="row">
-                <div class="col-md-9">
+                <div class="col-md-12">
                   
-                   <iframe src="/mmap.html" width="100%" height="600" align="left">
+                   <iframe src="/mix-mind/index.html" width="100%" height="600" align="left">
                       
                    </iframe>
 
                 </div>
                 <!-- /.col -->
-                <div class="col-md-3">
-                  <p class="text-center">
-                    <strong>Завершено</strong>
-                  </p>
 
-                  <div class="progress-group">
-                    <span class="progress-text">Проектов</span>
-                    <span class="progress-number"><b>0</b>/3</span>
 
-                    <div class="progress sm">
-                      <div class="progress-bar progress-bar-aqua" style="width: 80%"></div>
-                    </div>
-                  </div>
-                  <!-- /.progress-group -->
-                  <div class="progress-group">
-                    <span class="progress-text">Задач</span>
-                    <span class="progress-number"><b>03</b>/400</span>
-
-                    <div class="progress sm">
-                      <div class="progress-bar progress-bar-red" style="width: 80%"></div>
-                    </div>
-                  </div>
-                  <!-- /.progress-group -->
-                  <div class="progress-group">
-                    <span class="progress-text">Посетители Клики/Показы</span>
-                    <span class="progress-number"><b>83</b>/2891</span>
-
-                    <div class="progress sm">
-                      <div class="progress-bar progress-bar-green" style="width: 80%"></div>
-                    </div>
-                  </div>
-                  <!-- /.progress-group -->
-                  <div class="progress-group">
-                    <span class="progress-text">Продуктов</span>
-                    <span class="progress-number"><b>250</b>/421</span>
-
-                    <div class="progress sm">
-                      <div class="progress-bar progress-bar-yellow" style="width: 80%"></div>
-                    </div>
-                  </div>
-                  <!-- /.progress-group -->
-                </div>
                 <!-- /.col -->
               </div>
               <!-- /.row -->
@@ -400,7 +361,7 @@
     <!-- /.content -->
     <script>
       $(function () {
-        $('#example1').DataTable()
+        // $('#example1').DataTable()
         // $('#example2').DataTable({
         //   'paging'      : true,
         //   'lengthChange': false,
